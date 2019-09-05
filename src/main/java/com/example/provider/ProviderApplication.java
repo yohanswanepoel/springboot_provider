@@ -9,7 +9,7 @@ public class ProviderApplication extends SpringBootServletInitializer{
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(ProviderApplication.class)
+		return application.sources(ProviderApplication.class);
 	}
 
 	public static void main(String[] args) {

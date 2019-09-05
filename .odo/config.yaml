@@ -1,0 +1,14 @@
+kind: LocalConfig
+apiversion: odo.openshift.io/v1alpha1
+ComponentSettings:
+  Type: wildfly
+  SourceLocation: ./
+  SourceType: local
+  Ports:
+  - 8080/TCP
+  Application: app
+  Project: myproject
+  Name: wildfly-provider-gzsq
+  Url:
+  - Name: wildfly-provider-gzsq-8080
+    Port: 8080

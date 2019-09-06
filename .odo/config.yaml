@@ -1,14 +1,14 @@
 kind: LocalConfig
 apiversion: odo.openshift.io/v1alpha1
 ComponentSettings:
-  Type: wildfly
-  SourceLocation: ./
+  Type: wildfly:latest
+  SourceLocation: .
   SourceType: local
   Ports:
-  - 8080/TCP
+  - "8080"
   Application: app
   Project: myproject
-  Name: wildfly-provider-gzsq
+  Name: wildfly-test
   Url:
-  - Name: wildfly-provider-gzsq-8080
+  - Name: wildfly-test-8080
     Port: 8080

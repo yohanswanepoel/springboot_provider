@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
  * @author Givantha Kalansuriya
  */
 @Repository
-public interface ProviderRepository extends JpaRepository<Provider, Long> {}
+public interface ProviderRepository extends JpaRepository<Provider, Long> {
+    long countByStatus(String status);
+}

@@ -33,6 +33,14 @@ public class ProviderController {
         return "{\"status\":\"healthy\"}";
     }
 
+    @GetMapping("/providers/count/{status}")
+    public String countByStatus(
+        @ApiParam(value = "Provider status", required = true)
+        @PathVariable(value = "status") String status){
+            long count = providerRepository.countByStatus(status);
+            String resp = "{'status':" + new Long(count).toString() + "}";
+            return resp;
+        }
     /**
      * Get all providers list
      */

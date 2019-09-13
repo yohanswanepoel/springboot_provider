@@ -34,23 +34,7 @@ public class Provider {
     private String email;
 
     @Column(name = "status", nullable = false)
-    private int status;
-
-    @Column(name = "created_at", nullable = false)
-    @CreatedDate
-    private Date createdAt;
-
-    @Column(name = "created_by", nullable = false)
-    @CreatedBy
-    private String createdBy;
-
-    @Column(name = "updated_at", nullable = false)
-    @LastModifiedDate
-    private Date updatedAt;
-
-    @Column(name = "updated_by", nullable = false)
-    @LastModifiedBy
-    private String updatedBy;
+    private String status;
 
     public long getId() {
         return id;
@@ -92,45 +76,11 @@ public class Provider {
         this.email = email;
     }
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-    
 }

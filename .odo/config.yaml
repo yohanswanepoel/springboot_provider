@@ -1,0 +1,9 @@
+kind: LocalConfig
+apiversion: odo.openshift.io/v1alpha1
+ComponentSettings:
+  Type: java:8
+  SourceLocation: /Users/johanswanepoel/Development/springboot_provider
+  SourceType: local
+  Application: app
+  Project: myproject
+  Name: springboottest
